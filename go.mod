@@ -1,4 +1,4 @@
-module github.com/eufelipemateus/screenshot-url
+module github.com/eufelipemateus/screenshot_url
 
 go 1.22
 
