@@ -17,7 +17,7 @@ const USER_AGENT = "Felipe Mateus - Get Image"
 func ScreenshotUrl(url string, dest_path string) {
 	opts := append(chromedp.DefaultExecAllocatorOptions[:],
 		chromedp.UserAgent(USER_AGENT),
-		chromedp.Flag("ignore-certificate-errors", "1"),
+		chromedp.IgnoreCertErrors,
 	)
 
 	ctx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
